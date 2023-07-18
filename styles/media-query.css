@@ -1,0 +1,59 @@
+/* ===============--- media query for mobile devices ---=============== */
+@media only screen and (max-width:576px){
+
+/* ===============--- header section ---=============== */
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav ul li{
+        padding: .5rem 0;
+    }
+    nav .logo, ul{
+        margin: .5rem 0;
+    }
+
+/* ===============--- home section ---=============== */
+    #Home{
+        flex-direction: column-reverse;
+    }
+    .camera-area, .camera{
+        align-self: center;
+        justify-self: center;
+    }
+
+/* ===============--- sponsor section ---=============== */
+    #Sponsor{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+/* ===============--- popular section ---=============== */
+    .collection-are{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+/* ===============--- featured section ---=============== */
+    #Featured{
+        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+}
+
+
+/* ===============--- media query for tablet devices ---=============== */
+@media only screen and (min-width:576px) and (max-width:992px){
+    
+/* ===============--- sponsor section ---=============== */
+    #Sponsor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
